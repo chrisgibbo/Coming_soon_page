@@ -24,6 +24,9 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100vh;
     width: 100%;
     padding: 50px;
@@ -61,14 +64,17 @@ body {
 .input-section{
     margin: 30px;
     padding-bottom: 50px;
+}
 
+.input-box,
+.btn{
+    height: 40px;
+    border-radius: 20px;
+    font-size: 12px;
 }
 
 .input-box{
     width: 360px;
-    height: 40px;
-    border-radius: 20px;
-    font-size: 12px;
     border: 1px solid var(--gray);
     margin-right: 10px;
     text-indent: 20px;
@@ -78,12 +84,9 @@ body {
 
 .btn{
     width: 145px;
-    height: 40px;
-    border-radius: 20px;
     background-color: var(--blue);
     border: none;
     color: white;
-    font-size: 12px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     cursor: pointer;
 }
@@ -98,7 +101,7 @@ body {
 }
 
 .social-icons{
-    padding: 100px 0 40px 0;
+    margin: 200px 0 40px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,6 +114,8 @@ body {
 }
 
 span{
+    display: flex;
+    justify-content: center;
     align-items: center;
     margin: 0 10px;
 }
@@ -134,4 +139,162 @@ span{
 
 #insta{
     color: #F77737;
+}
+
+@media screen and (max-width: 678px) {
+    
+
+    .input-box,
+    .btn {
+        width: 360px;
+        height: 40px;
+        font-size: 12px;
+        border-radius: 20px;
+    }
+
+    .input-box{      
+        border: 1px solid var(--gray);
+        margin-right: 10px;
+        text-indent: 20px;
+        opacity: 0.5;
+        margin-bottom: 15px;
+    }
+
+    .btn{
+        background-color: var(--blue);
+        border: none;
+        color: white;        
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        cursor: pointer;
+    }
+
+    .main-image{
+        height: 250px;
+       }
+    
+}
+
+@media screen and (max-width: 550px) {
+
+
+
+   .main-title{
+    padding-top: 20px;
+    font-size: 28px;    
+   }
+
+   .bodytext{
+    font-size: 16px;
+   }
+
+   .input-section{
+    margin: 0;
+    padding: 0;
+   }
+
+   .input-box,
+   .btn {
+       width: 340px;
+       height: 40px;
+       font-size: 12px;
+       border-radius: 20px;
+   }
+
+   .input-box{
+    margin-top: 20px;
+   }
+
+   .btn{
+    margin-bottom: 80px;
+   }
+
+   .main-img{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .main-image{
+    height: 100%;
+   }
+
+   .social-icons{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 400px) {
+
+    .logo{
+        height: 15px;
+    }
+
+   .main-title{
+    padding-top: 0;
+    font-size: 20px;    
+   }
+
+   .bodytext{
+    font-size: 12px;
+   }
+
+   .input-section{
+    margin: 0;
+    padding: 0;
+   }
+
+   .input-box,
+   .btn {
+       width: 250px;
+       height: 35px;
+       font-size: 12px;
+       border-radius: 20px;
+   }
+
+   .input-box{
+    margin-top: 20px;
+    margin-bottom: 10px;
+   }
+
+   .btn{
+    margin-bottom: 60px;
+   }
+
+   .main-img{
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .social-icons{
+    font-size: 2px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+
+#facebook,
+#twitter,
+#insta{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.copyright {
+    font-size: 10px;
+    color: var(--gray);
+}
+
 }
