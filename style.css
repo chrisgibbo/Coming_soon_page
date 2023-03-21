@@ -176,8 +176,6 @@ span{
 
 @media screen and (max-width: 550px) {
 
-
-
    .main-title{
     padding-top: 20px;
     font-size: 28px;    
@@ -224,6 +222,7 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
+}
 }
 
 @media screen and (max-width: 400px) {
